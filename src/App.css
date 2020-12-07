@@ -1,38 +1,77 @@
 .App {
+  display: flex;
+}
+
+.employeesList{
+  width: 70%;
+}
+
+.employeesList h1{
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.employeesList h2{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.employeesList > div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+  border-right: 2px solid #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+.employeesListItem{
+  min-width: 200px;
+  max-width: 200px;
+  padding: 0 15px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.employee{
+  font-weight: 600;
+  display: block;
+  padding: 0 10px;
+  margin: 10px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.employeesBirth{
+  width: 30%;
+  min-width: 300px;
+}
+
+.employeesBirth h4{
+  margin-top: 0;
+}
+
+.employeesBirth > div{
+  border-top: 2px solid #ccc;
+  padding-left: 30px;
+}
+
+.employeesBirth h2{
+  text-align: center;
+}
+
+.birthdayMonth{
+  padding: 15px;
+}
+
+.birthdayMonth ul{
+  padding-left: 20px;
+}
+
+.birthRecord{
+  font-weight: 600;
+}
+
+.noEmployee{
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
