@@ -109,7 +109,7 @@ function App() {
             </div>
           </Route>
           <Route path="*">
-            go to the <Link to="/employees">Employees Page</Link>
+            go to the <Link to="./employees">Employees Page</Link>
           </Route>
         </Switch>
       </Router>
