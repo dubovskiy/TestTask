@@ -102,7 +102,7 @@ function App() {
     >
       <Router>
         <Switch>
-          <Route path="/employees">
+          <Route path="*/employees">
             <div className="App">
               <EmployeesBlocksList />
               <EmployeesBirthday />
